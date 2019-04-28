@@ -3,21 +3,24 @@
 <br/>  
 <img src="art/motion.png" />  
 <br/>  
+<br/>  
+<img src="art/shared_elements.gif" />  
+<br/>  
 
 Animation plays a huge part in a UX and is one of the fundamental building blocks of Material design.
 So, Motion as a sample app will be the demonstration of animations using every existent library and tool on Android. Detailed documentation will be provided as well.
 
 # TODO
--   [x] ~~Shared elements animation using architecture components~~  
--   [] Shared elements animation (regular way)
--   [] Material transitions
--   [] View animations
--   [] VectorDrawable animations
--   [] Physics based animations
--   [] Circular reveal
--   [] TransitionManager animations
--   [] ConstraintLayout animations
--   [] MotionLayout animations
+[x] ~~Shared elements animation using architecture components~~  
+[] Shared elements animation (regular way)
+[] Material transitions
+[] View animations
+[] VectorDrawable animations
+[] Physics based animations
+[] Circular reveal
+[] TransitionManager animations
+[] ConstraintLayout animations
+[] MotionLayout animations
 
 
 # LICENSE
