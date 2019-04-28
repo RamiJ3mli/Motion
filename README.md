@@ -12,15 +12,15 @@ So, Motion as a sample app will be the demonstration of animations using every e
 
 # TODO
 - [x] ~~Shared elements animation using architecture components~~  
-- [] Shared elements animation (regular way)
-- [] Material transitions
-- [] View animations
-- [] VectorDrawable animations
-- [] Physics based animations
-- [] Circular reveal
-- [] TransitionManager animations
-- [] ConstraintLayout animations
-- [] MotionLayout animations
+- [ ] Shared elements animation (regular way)
+- [ ] Material transitions
+- [ ] View animations
+- [ ] VectorDrawable animations
+- [ ] Physics based animations
+- [ ] Circular reveal
+- [ ] TransitionManager animations
+- [ ] ConstraintLayout animations
+- [ ] MotionLayout animations
 
 
 # LICENSE
