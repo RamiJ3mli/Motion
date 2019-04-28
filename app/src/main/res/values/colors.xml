@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#18FFFF</color>
+    <color name="colorBackground">#212121</color>
+
+
+    <color name="colorAstro">#9C27B0</color>
+    <color name="colorCS">#F44336</color>
+    <color name="colorAI">#F44336</color>
+    <color name="colorAlg">#03A9F4</color>
+    <color name="colorGeom">#03A9F4</color>
+    <color name="colorPhys">#00BCD4</color>
+    <color name="colorChem">#00BCD4</color>
+    <color name="colorBio">#FFC107</color>
+    <color name="colorMeteo">#FFC107</color>
+    <color name="colorGeo">#4CAF50</color>
+    <color name="colorNeuro">#673AB7</color>
+    <color name="colorPhilo">#673AB7</color>
+
+</resources>

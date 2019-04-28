@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Transitions</string>
+
+    <array name="home_colors">
+        <item>@color/colorAstro</item>
+        <item>@color/colorCS</item>
+        <item>@color/colorAI</item>
+        <item>@color/colorAlg</item>
+        <item>@color/colorGeom</item>
+        <item>@color/colorPhys</item>
+        <item>@color/colorChem</item>
+        <item>@color/colorBio</item>
+        <item>@color/colorGeo</item>
+        <item>@color/colorMeteo</item>
+        <item>@color/colorNeuro</item>
+        <item>@color/colorPhilo</item>
+    </array>
+
+    <array name="home_titles">
+        <item>ASTRONOMY</item>
+        <item>COMPUTER SCIENCE</item>
+        <item>AI</item>
+        <item>ALGEBRA</item>
+        <item>GEOMETRY</item>
+        <item>PHYSICS</item>
+        <item>CHEMISTRY</item>
+        <item>BIOLOGY</item>
+        <item>GEOLOGY</item>
+        <item>METEOROLOGY</item>
+        <item>NEUROSCIENCE</item>
+        <item>PHILOSOPHY</item>
+    </array>
+
+    <array name="home_icons">
+        <item>@drawable/ic_astronomy</item>
+        <item>@drawable/ic_comp_science</item>
+        <item>@drawable/ic_ai</item>
+        <item>@drawable/ic_algebra</item>
+        <item>@drawable/ic_geometry</item>
+        <item>@drawable/ic_physics</item>
+        <item>@drawable/ic_chemistry</item>
+        <item>@drawable/ic_biology</item>
+        <item>@drawable/ic_geology</item>
+        <item>@drawable/ic_meteorology</item>
+        <item>@drawable/ic_neuroscience</item>
+        <item>@drawable/ic_philosophy</item>
+    </array>
+
+</resources>

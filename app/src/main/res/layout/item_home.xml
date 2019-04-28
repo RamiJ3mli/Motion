@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:transitionGroup="false">
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/all_ripple"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:background="@drawable/all_anchor"
+        android:elevation="8dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="@+id/science"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/science" />
+
+    <TextView
+        android:id="@+id/science"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:outlineProvider="none"
+        android:gravity="start"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        tools:text="RAMI JEMLI " />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:outlineProvider="none"
+        android:background="@drawable/all_bg"
+        android:elevation="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_philosophy"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
