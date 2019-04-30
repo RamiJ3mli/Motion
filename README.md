@@ -2,9 +2,9 @@
 
 <br/>  
 <img src="art/motion.png" />  
+
 <br/>  
-<br/>  
-<img src="art/shared_elements.gif" width="40%" />  
+<img src="art/home.gif" width="40%" /> <img src="art/shared_elements.gif" width="40%" />  
 <br/>  
 
 Animation plays a huge part in a UX and is one of the fundamental building blocks of Material design.
