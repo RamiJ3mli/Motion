@@ -3,7 +3,6 @@
 <br/>  
 <img src="art/motion.png" />  
 
-<br/>  
 <img src="art/home.gif" width="40%" /> <img src="art/shared_elements.gif" width="40%" />  
 <br/>  
 
