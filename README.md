@@ -3,13 +3,14 @@
 <br/>  
 <img src="art/motion.png" />  
 
-<img src="art/home.gif" width="40%" /> <img src="art/shared_elements.gif" width="40%" />  
+<img src="art/home.gif" width="32%" /> <img src="art/shared_elements.gif" width="32%" />  <img src="art/interepolators.gif" width="32%" /> 
 <br/>  
 
 Animation plays a huge part in a UX and is one of the fundamental building blocks of Material design.
 So, Motion as a sample app will be the demonstration of animations using every existent library and tool on Android. Detailed documentation will be provided as well.
 
 # TODO
+- [x] ~~Interpolators\' visual guide~~  
 - [x] ~~Shared elements animation using architecture components~~  
 - [ ] Shared elements animation (regular way)
 - [ ] Material transitions

@@ -54,6 +54,21 @@
         <item>MotionLayout in action</item>
     </array>
 
+    <array name="interpolator_titles">
+        <item>LINEAR INTERPOLATOR</item>
+        <item>ACCELERATE INTERPOLATOR</item>
+        <item>DECELERATE INTERPOLATOR</item>
+        <item>ACCELERATE DECELERATE INTERPOLATOR</item>
+        <item>ANTICIPATE INTERPOLATOR</item>
+        <item>OVERSHOOT INTERPOLATOR</item>
+        <item>ANTICIPATE OVERSHOOT INTERPOLATOR</item>
+        <item>BOUNCE INTERPOLATOR</item>
+        <item>FAST OUT LINEAR IN INTERPOLATOR</item>
+        <item>FAST OUT SLOW IN INTERPOLATOR</item>
+        <item>LINEAR OUT SLOW IN INTERPOLATOR</item>
+        <item>CUSTOM PATH COMPAT INTERPOLATOR</item>
+    </array>
+
     <array name="home_icons">
         <item>@drawable/ic_astronomy</item>
         <item>@drawable/ic_comp_science</item>

@@ -1,25 +1,30 @@
 package com.ramijemli.motion.activity
 
-import android.graphics.Path
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
-import androidx.core.view.animation.PathInterpolatorCompat
-import com.ramijemli.motion.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.ramijemli.motion.adapter.InterpolatorAdapter
 import kotlinx.android.synthetic.main.activity_interpolator.*
+
 
 class InterpolatorActivity : AppCompatActivity() {
 
+    private lateinit var adapter: InterpolatorAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_interpolator)
+        setContentView(com.ramijemli.motion.R.layout.activity_interpolator)
+        setupRV()
+    }
 
-        var p = Path()
-        p.lineTo(3f,3f)
-        icon.animate()
-                .translationYBy(300f)
-                .setDuration(6000)
-                .setInterpolator(PathInterpolatorCompat.create(0f, 1.95f, 0.77f, .45f))
-                .setStartDelay(1000)
-                .start()
+    private fun setupRV() {
+        val llm = LinearLayoutManager(baseContext, RecyclerView.VERTICAL, false)
+        llm.isItemPrefetchEnabled = true
+        interRv.layoutManager = llm
+        interRv.setHasFixedSize(true)
+        adapter = InterpolatorAdapter(baseContext)
+        interRv.adapter = adapter
     }
 }

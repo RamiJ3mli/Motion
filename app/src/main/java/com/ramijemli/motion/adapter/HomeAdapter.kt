@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.item_home.*
 import kotlinx.android.synthetic.main.item_home.card
 import kotlinx.android.synthetic.main.item_home.icon
+import kotlinx.android.synthetic.main.item_home.view.*
 
 
 class HomeAdapter(mContext: Context?, private val listener: OnItemClickedListener) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
@@ -41,29 +42,23 @@ class HomeAdapter(mContext: Context?, private val listener: OnItemClickedListene
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder =
             HomeViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_home, parent, false))
 
+    override fun onBindViewHolder(viewHolder: HomeViewHolder, position: Int) = viewHolder.bind(mData?.get(position))
 
-    override fun onBindViewHolder(viewHolder: HomeViewHolder, position: Int) {
-        viewHolder.bind(mData?.get(position))
-    }
+    override fun getItemCount(): Int = mData?.size()!!
 
-    override fun getItemCount(): Int {
-        return mData?.size()!!
-    }
-
-    inner class HomeViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
-            LayoutContainer {
+    inner class HomeViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
 
         fun bind(item: Animation?) {
-            card.setOnClickListener {
-                listener.onItemClicked(adapterPosition)
+            card.apply {
+                background = ContextCompat.getDrawable(containerView.context, item?.bg!!)
+                setOnClickListener {
+                    listener.onItemClicked(adapterPosition)
+                }
             }
-            card.background = ContextCompat.getDrawable(containerView.context, item?.bg!!)
 
             number.text = (adapterPosition + 1).toString()
-            title.text = item.title
-            subtitle.text = item.subtitle
-
-//            icon.setImageDrawable(ContextCompat.getDrawable(containerView.context, item.icon!!))
+            title.text = item?.title
+            subtitle.text = item?.subtitle
         }
     }
 
