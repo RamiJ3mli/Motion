@@ -10,26 +10,32 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.ramijemli.motion.R
+import com.ramijemli.motion.model.Animation
 import com.ramijemli.motion.model.Science
 import kotlinx.android.extensions.LayoutContainer
+import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.item_home.*
+import kotlinx.android.synthetic.main.item_home.card
+import kotlinx.android.synthetic.main.item_home.icon
 
 
 class HomeAdapter(mContext: Context?, private val listener: OnItemClickedListener) : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
 
 
-    private var mData: SparseArray<Science>? = null
+    private var mData: SparseArray<Animation>? = null
 
     init {
         mData = SparseArray()
-        val colors = mContext?.resources?.getIntArray(R.array.home_colors)
         val titles = mContext?.resources?.getStringArray(R.array.home_titles)
+        val subtitles = mContext?.resources?.getStringArray(R.array.home_subtitles)
         val icons = mContext?.resources?.obtainTypedArray(R.array.home_icons)
+        val bgs = mContext?.resources?.obtainTypedArray(R.array.home_bgs)
 
-        for (i in 0 until colors?.size!!) {
-            mData?.append(i, Science(titles?.get(i), colors[i], icons?.getResourceId(i, -1) ))
+        for (i in 0 until titles?.size!!) {
+            mData?.append(i, Animation(titles[i], subtitles?.get(i), bgs?.getResourceId(i, -1), icons?.getResourceId(i, -1) ))
         }
         icons?.recycle()
+        bgs?.recycle()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder =
@@ -47,22 +53,21 @@ class HomeAdapter(mContext: Context?, private val listener: OnItemClickedListene
     inner class HomeViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
             LayoutContainer {
 
-        fun bind(item: Science?) {
+        fun bind(item: Animation?) {
             card.setOnClickListener {
-                listener.onItemClicked(it, card, science, icon, item)
+                listener.onItemClicked(adapterPosition)
             }
-            card.transitionName = item?.science + item?.color
+            card.background = ContextCompat.getDrawable(containerView.context, item?.bg!!)
 
-            science.text = item?.science
-            science.transitionName = item?.science
+            number.text = (adapterPosition + 1).toString()
+            title.text = item.title
+            subtitle.text = item.subtitle
 
-            icon.transitionName = item?.science + item?.icon
-            icon.backgroundTintList = ColorStateList.valueOf(item?.color!!)
-            icon.setImageDrawable(ContextCompat.getDrawable(containerView.context, item.icon!!))
+//            icon.setImageDrawable(ContextCompat.getDrawable(containerView.context, item.icon!!))
         }
     }
 
     interface OnItemClickedListener {
-        fun onItemClicked(view: View, cardView: View, titleView: View, iconView: View, item: Science?)
+        fun onItemClicked(position: Int)
     }
 }

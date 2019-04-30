@@ -1,7 +1,73 @@
 <resources>
-    <string name="app_name">Transitions</string>
+    <string name="app_name">Motion</string>
 
-    <array name="home_colors">
+    <array name="home_bgs">
+        <item>@drawable/all_ripple_interpolators</item>
+        <item>@drawable/all_ripple_transitions</item>
+        <item>@drawable/all_ripple_shared</item>
+        <item>@drawable/all_ripple_animator</item>
+        <item>@drawable/all_ripple_vector</item>
+        <item>@drawable/all_ripple_lottie</item>
+        <item>@drawable/all_ripple_physics</item>
+        <item>@drawable/all_ripple_manager</item>
+        <item>@drawable/all_ripple_coordinator</item>
+        <item>@drawable/all_ripple_motion</item>
+    </array>
+
+    <array name="home_titles">
+        <item>INTERPOLATORS</item>
+        <item>MATERIAL TRANSITIONS</item>
+        <item>SHARED ELEMENTS TRANSITION</item>
+        <item>VIEW/VALUE ANIMATIONS</item>
+        <item>ANIMATED VECTOR DRAWABLES</item>
+        <item>LOTTIE</item>
+        <item>PHYSICS-BASED ANIMATION</item>
+        <item>TRANSITION MANAGER LAYOUT ANIMATION</item>
+        <item>COORDINATOR LAYOUT</item>
+        <item>MOTION LAYOUT ANIMATION</item>
+    </array>
+    <!--<item>MATERIAL TRANSITIONS FOR ACTIVITYS </item>-->
+    <!--<item>MATERIAL TRANSITIONS FOR FRAGMENTS</item>-->
+    <!--<item>SHARED ELEMENTS TRANSITION FOR ACTIVITYS </item>-->
+    <!--<item>SHARED ELEMENTS TRANSITION FOR FRAGMENTS </item>-->
+    <!--<item>SHARED ELEMENTS TRANSITION FOR FRAGMENTS </item>-->
+    <!--<item>DYNAMIC SHARED ELEMENTS TRANSITION</item>-->
+    <!--<item>VIEW/VALUE ANIMATIONS</item>-->
+    <!--<item>ANIMATED VECTOR DRAWABLES</item>-->
+    <!--<item>LOTTIE</item>-->
+    <!--<item>PHYSICS-BASED ANIMATION</item>-->
+    <!--<item>TRANSITION MANAGER LAYOUT ANIMATION</item>-->
+    <!--<item>CONSTRAINT SET ANIMATION</item>-->
+    <!--<item>COORDINATOR LAYOUT</item>-->
+    <!--<item>MOTION LAYOUT ANIMATION</item>-->
+
+    <array name="home_subtitles">
+        <item>Visual guide of interpolators</item>
+        <item>Transitions applied on activities and fragment</item>
+        <item>Shared elements transition applied on activities and fragment (Nav component included)</item>
+        <item>Examples of value, object and view property animators</item>
+        <item>Examples of AnimatedVectorDrawables</item>
+        <item>Showcase of lottie library</item>
+        <item>Physics-based animations in action</item>
+        <item>Examples of the TransitionManager API (ConstraintSet included)</item>
+        <item>User driven motion using CoordinatorLayout</item>
+        <item>MotionLayout in action</item>
+    </array>
+
+    <array name="home_icons">
+        <item>@drawable/ic_astronomy</item>
+        <item>@drawable/ic_comp_science</item>
+        <item>@drawable/ic_ai</item>
+        <item>@drawable/ic_algebra</item>
+        <item>@drawable/ic_geometry</item>
+        <item>@drawable/ic_physics</item>
+        <item>@drawable/ic_chemistry</item>
+        <item>@drawable/ic_biology</item>
+        <item>@drawable/ic_geology</item>
+        <item>@drawable/ic_biology</item>
+    </array>
+
+    <array name="sciences_colors">
         <item>@color/colorAstro</item>
         <item>@color/colorCS</item>
         <item>@color/colorAI</item>
@@ -16,7 +82,7 @@
         <item>@color/colorPhilo</item>
     </array>
 
-    <array name="home_titles">
+    <array name="sciences_titles">
         <item>ASTRONOMY</item>
         <item>COMPUTER SCIENCE</item>
         <item>AI</item>
@@ -31,7 +97,7 @@
         <item>PHILOSOPHY</item>
     </array>
 
-    <array name="home_icons">
+    <array name="sciences_icons">
         <item>@drawable/ic_astronomy</item>
         <item>@drawable/ic_comp_science</item>
         <item>@drawable/ic_ai</item>

@@ -28,7 +28,7 @@ class DetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            data = DetailFragmentArgs.fromBundle(it).science
+//            data = DetailFragmentArgs.fromBundle(it).science
         }
         setupTransition()
     }
